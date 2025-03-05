@@ -28,3 +28,17 @@ function fun2(r){
 }
 }
 fun2(10);
+
+let n = 10;
+for(let row = 1 ; row<=n; row++){
+    let str = '';
+    let spaces = n - row ;
+    for(let j =1 ; j<= spaces;j++){
+        str = str + " ";
+        
+    }
+    for(let k = 1 ; k<= n - spaces;k++){
+        str = str+"*";
+    }
+    console.log(str);
+}
