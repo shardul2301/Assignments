@@ -27,4 +27,23 @@ function dashboard(username="guest"){
 dashboard('shardul');
 dashboard();
 
+//destrucring 
+const arr=[1,4,3,75,8,9];
+let [a,b,c,d,e,f] = arr;
+console.log(e)
+
+//spraed 
+const vip = [3,6,7,2,5,1,8,9,3,43,7];
+const vip2= [...vip];
+console.log(vip2)
+
+
+// for  object 
+const obj = {
+    name:'shardul',
+    age:22
+}
+let {age} = obj;
+console.log(age)
+
 
