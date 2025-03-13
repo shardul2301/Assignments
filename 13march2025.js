@@ -133,7 +133,38 @@ let text1 = "Please visit Microsoft!";
 let newText = text1.replace("Microsoft", "Schools");
 console.log(newText);
 
+//rest spread const person1 = {
+    name : 'joe root',
+    role: 'rigth hand batsman ',
+    team:'england'
+}
 
+
+const criketer2 = {
+    name : 'virat koli',
+    role: 'rigth hand batsman ',
+    
+}
+const {name,role,team} = person1 ;
+console.log(name);
+console.log(role);
+console.log(team);
+const {name,role,team ="india"} = criketer2 ;
+console.log(team)
+
+const arr = [ 1,4,6,7,9,34,65,0];
+const result = Math.max(...arr);
+const result1 = Math.min(...arr);
+console.log(result)
+console.log(result1)
+function foodstore(...food){
+    console.log(...food);
+    
+}
+let food1 = 'juice';
+let food2 = 'samosa';
+let food3 = 'dhokla';
+const res = foodstore(food1,food2);
 
 
 
