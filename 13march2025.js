@@ -73,6 +73,65 @@ function checkAge(age) {
 }
 console.log(index); 
   
+///string methodes 
+
+
+// // const dates = ["2023-4-2","2022-6-3","2025-9-1"];
+// // const formatdate = dates.map(formatting())
+// // // console.log()
+
+// // function formatting(){
+// //     const parts = dates.split("-");
+// //   return parts ;
+// // }
+
+// const  carpet ='shardul=mane'
+// // const fit = carpet.map(fun())
+
+// function fun(){
+//     const splititems = carpet.split("=");
+//     return `${splititems[0]} the sir name is ${splititems[1]}`;
+// }
+// // const splititems = carpet.split("=");
+// // console.log(splititems);
+// console.log(fun())
+let string  = 'jackpot';
+const length = string.length;
+console.log(length);
+// Extracting String Characters
+ const charat =string.charAt(0);
+ console.log(charat)
+ 
+ const charat1 =string.at(5);
+ console.log(charat1)
+ const charat2 =string.charCodeAt(4);
+ console.log(charat2)
+ let characterof2 = string[2];
+ console.log(characterof2)
+  const newstr = string.slice(0,3);
+ console.log("updated str with slice",newstr);
+ const fruites = "banana,oarange,chiku,gava,strobery";
+ const res = fruites.substring(1,6)
+console.log("the use of sub string ",res);
+
+const toupperlower = "harry POTTER";
+const up = toupperlower.toUpperCase();
+console.log(up)
+const low = toupperlower.toLowerCase();
+console.log(low);
+ const concatmeth = up.concat(low);
+ console.log(concatmeth);
+ const word = 'skddskd + shdashkd   ';
+  const res43 = word.trim();
+  console.log(res43)
+  const splitword = word.split("+")
+  console.log(splitword);
+  let text = "Hello world!";
+let result = text.repeat(2);
+console.log(result);
+let text1 = "Please visit Microsoft!";
+let newText = text1.replace("Microsoft", "Schools");
+console.log(newText);
 
 
 
