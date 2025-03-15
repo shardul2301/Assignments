@@ -147,4 +147,16 @@ function outer() {
 const increment = outer();
 increment();
 increment();
-
+const string ='iron man';
+const res = string.replace('iron','spider');
+console.log(res)
+setTimeout(()=>{
+    console.log(23);
+},2000)
+setTimeout(()=>{
+    console.log(2);
+},1000)
+setTimeout(()=>{
+    console.log(203);
+},000)
+console.log("this is last line")
