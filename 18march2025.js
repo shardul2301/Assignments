@@ -56,7 +56,7 @@ function updated(tower){
 }
 
 const updatednumber = updated(Building);
-
+console.log(Building) //so in this out put number of pepoles are update bucause of object are not passby vaule it pass by reference
 
 console.log("implicit and explicit type conversions");
 // q1
@@ -116,7 +116,7 @@ let b1 = 2;
 console.log(a1 + b1, a1 - b1);
 
 
-console.log(Building) //so in this out put number of pepoles are update bucause of object are not passby vaule it pass by reference
+
  
  
  
