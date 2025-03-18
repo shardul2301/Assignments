@@ -116,6 +116,46 @@ let b1 = 2;
 console.log(a1 + b1, a1 - b1);
 
 
+// js tricky quetions only difficult
+console.log("Try programiz.pro");
+console.log("js tricky quetions ")
+for(var i = 0 ; i<3 ;i++){
+    setTimeout(()=>{
+        console.log(i)
+    },1000)
+}
+console.log(foo());
+function foo() {
+    return "Hello";
+}
+console.log(+true)
+console.log(typeof +true)
+
+let data = 'size';
+const brid = {
+    size : 'small'
+}
+
+console.log(brid[data]);
+console.log(brid["size"]);
+console.log(brid.size);
+console.log(brid.data)
+
+let person = { name :'harry'};
+let person2 ;
+person2=person;
+person.name =  'bill gates';
+console.log(person2.name)
+
+const animal = {
+    name  : 'dog'
+}
+function sayhi(colour){
+    return console.log(`${this.name} colour of this is ${colour}`)
+}
+sayhi.call(animal,12);
+sayhi.bind(animal,14)()//we have to call the function again for calling if not call then it will return the whole function of name sayhi
+
 
  
  
