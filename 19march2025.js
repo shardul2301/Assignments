@@ -94,6 +94,105 @@ function calculateElectricityBill(units, costPerUnit) {
     return units*costPerUnit;
 }
 
+// js coding challenges problems
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+let obj = {
+    name:'shsad'
+}
+console.log(obj.name)
+const person = {
+  firstName : "John",
+  lastName : "Doe",
+  age : 50,
+  eyeColor : "blue"
+};
+
+let text = Object.values(person);
+console.log(text)
+let str = 'abcd';
+console.log(str.indexOf())
+
+function countOccurrences(str, word) {
+  //code here
+  const count = str.split(word).length - 1;
+console.log(count)
+  return count;
+}
+const comment = "This product is great. The quality is great and it's a great value.";
+const wordToCount = "great";
+
+const count = countOccurrences(comment, wordToCount);
+console.log(`The word ${wordToCount} appears ${count} times in the comment.`);
+// q2
+
+function isProductMatch(query, description) {
+let result =  description.includes(query);
+
+console.log(result)
+
+}
+
+let query = "red shoes";
+let productDescription = "These are red shoes with comfortable padding.";
+
+isProductMatch(query, productDescription);
+
+
+
+function checkStock(inventory, item) {
+    if(inventory[item]<=0) {console.log("Out of stock", item) 
+    return ;
+        
+    }
+    return console.log("In stock",item)
+    // console.log(inventory.apples==inventory.item && )
+    //   let res = Object.values(inventory);
+    //   console.log(res)
+    // let res = inventory.item;
+    // console.log(res)
+}
+
+
+// Function call example
+const inventory = { apples: 10, bananas: 0,mango : 0 };
+checkStock(inventory, "apples"); // "In stock"
+checkStock(inventory, "bananas"); // "Out of stock"
+checkStock(inventory, "mango");
+// Write a javascript program. Where create a variable email and assign the some email address in it.Then create a variable domain. After that check the email contain the domain.If it finds the domain within the email, it returns the position where domain starts. If not, it returns -1.
+
+function checkGmailDomain(email, domain) {
+ //code here
+ const position = email.indexOf(domain);
+ if(position==-1){
+     console.log("email is not valid");
+     return;
+ }
+ return console.log("valid email")
+}
+
+const email = "user@example.com"; 
+const domain = "@gmail.com";
+
+checkGmailDomain(email, domain);
+
+
+// Write a program in javascript. Where create a variable phoneNumber .phoneNumber contains the user input, but it has unwanted spaces at the start and end.Than create cleanedPhoneNumber variable which holds the processed, clean phone number without extra spaces..
+function cleanPhoneNumber(phoneNumber) {
+ //code here
+ const res = phoneNumber.trim();
+ return res
+}
+
+const phoneNumber = "  +1 234 567 890  ";  // User input with leading and trailing spaces
+const cleanedPhoneNumber = cleanPhoneNumber(phoneNumber);
+
+console.log(cleanedPhoneNumber);  // Output: "+1 234 567 890"
+
+
+
+
 // Example usage
 console.log(calculateElectricityBill(250, 5)); // Output: 1250
 console.log(calculateElectricityBill(100, 10)); // Output: 1000
