@@ -1,14 +1,10 @@
-// JS-Coding-Challenges
-
-
 
 // console.log("Try programiz.pro");
 // console.log("Start");
 // setTimeout(() => console.log("Inside Timeout"), 0);
 // console.log("End");
 // Output: Start → End → Inside Timeout (because setTimeout is async)
-// q1  Question 1: Convert a string to a valid number
-// Write a function to convert a string containing a number (e.g., "123") into an actual number. If it is not a valid number, return NaN.
+
 function convertToNumber(str) {
    // Your code here
   const num = Number(str);
@@ -24,8 +20,7 @@ function convertToNumber(str) {
 
 convertToNumber("123"); // 123
 convertToNumber("abc"); // NaN
-// q2
-// Write a function that rounds a number to the nearest whole number
+
 function roundNumber(num) {
    // Your code here
    const answer = Math.round(num);
@@ -33,24 +28,8 @@ function roundNumber(num) {
 }
 console.log(roundNumber(4.3)); // 4
 console.log(roundNumber(4.7)); // 5
-// q3
-// Question 3: Working with Large Numbers: Formatting and Display
-// Write a function formatLargeNumber that converts a large number into a user-friendly format (e.g., 1.5K, 3.5M).
 
-// // Example:
 
-// function formatLargeNumber(number) {
-//     const answer = number.toFixed();
-//     return answer;
-// }
-
-// // Example usage
-// console.log(formatLargeNumber(1500));  // Output: "1.5K"
-// console.log(formatLargeNumber(3500000)); // Output: "3.5M"
-// console.log(formatLargeNumber(950)); // Output: "950"
-
-// q4
-// Write a function calculateBulkDiscount that calculates the total cost for bulk orders, applying a discount when the quantity exceeds a threshold.
 function calculateBulkDiscount(price, quantity, discountThreshold, discountRate) {
     if(quantity>discountThreshold){
         const discountprice = price * (1-discountRate/100)
@@ -74,8 +53,7 @@ function generateRandomNumber(min, max) {
 // Example usage
 console.log(generateRandomNumber(1, 10)); // Output: A random number between 1 and 10 (e.g., 7)
 console.log(generateRandomNumber(5, 15)); // Output: A random number between 5 and 15 (e.g., 12)
-// q5
-// Write a function convertToBinary that converts a given number into its binary representation as a string.
+
 function convertToBinary(number) {
     //Your code here
     const answer = number.toString(2)
@@ -87,16 +65,14 @@ console.log(convertToBinary(10)); // Output: "1010"
 console.log(convertToBinary(255)); // Output: "11111111"
 console.log(convertToBinary(0)); // Output: "0"
 console.log(convertToBinary('rt'));
-// Write a function calculateElectricityBill that calculates the total electricity bill based on units consumed and the cost per unit.
+.
 
 function calculateElectricityBill(units, costPerUnit) {
     //Your code here
     return units*costPerUnit;
 }
 
-// js coding challenges problems
-// Online Javascript Editor for free
-// Write, Edit and Run your Javascript code using JS Online Compiler
+
 
 let obj = {
     name:'shsad'
@@ -160,7 +136,6 @@ const inventory = { apples: 10, bananas: 0,mango : 0 };
 checkStock(inventory, "apples"); // "In stock"
 checkStock(inventory, "bananas"); // "Out of stock"
 checkStock(inventory, "mango");
-// Write a javascript program. Where create a variable email and assign the some email address in it.Then create a variable domain. After that check the email contain the domain.If it finds the domain within the email, it returns the position where domain starts. If not, it returns -1.
 
 function checkGmailDomain(email, domain) {
  //code here
@@ -178,7 +153,7 @@ const domain = "@gmail.com";
 checkGmailDomain(email, domain);
 
 
-// Write a program in javascript. Where create a variable phoneNumber .phoneNumber contains the user input, but it has unwanted spaces at the start and end.Than create cleanedPhoneNumber variable which holds the processed, clean phone number without extra spaces..
+
 function cleanPhoneNumber(phoneNumber) {
  //code here
  const res = phoneNumber.trim();
