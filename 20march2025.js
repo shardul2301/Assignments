@@ -102,3 +102,29 @@ function displayProduct(product) {
 }
 
  displayProduct(productDetail);
+
+//function currying in js 
+const multiply1 = (a) => (b) => (c) => a * b * c;
+
+console.log(multiply1(2)(3)(4)); // Output: 24
+
+
+function multi(x,y){
+    return x*y;
+}
+const multiply = multi.bind(this,8);
+console.log(multiply(9))
+
+function div(a,b){
+    return a/b;
+    
+}
+const division = div.bind(this ,10,20) //uderstand the vaules of a,b take time to see
+console.log(division())
+const dived = div.bind(this,20);//again in first function call we take taking a vule then below we are take b vaule
+console.log(dived(2))
+
+
+
+
+
