@@ -21,3 +21,28 @@ console.log("5" + 3);
 console.log("5" - 3);  
 console.log(5 == "5");  
 console.log(true + 1);
+
+let admin ={
+    adminname : 'pragati',
+    location :'mumbai',
+    phonenumber : 98453278,
+    address:'near dadar station ',
+    position: 'supervisor',
+    centerno : 435,
+    exam: {
+        examname :'UPSC',
+        examcenter:'powai',
+        slot:1
+    }
+}
+for (let key in admin ){
+    // console.log(key)
+    console.log(key + ':' + admin[key])
+}
+
+console.log(admin.exam.examname)
+console.log(admin.exam)
+
+delete admin.centerno
+console.log(admin);
+
