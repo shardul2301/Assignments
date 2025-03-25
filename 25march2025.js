@@ -1,3 +1,43 @@
+// array methods
+console.log(0.1 + 0.2 === 0.3 );
+let array = [1,2,3,4,5,6,7,8,9,0];
+const indexOff = array.indexOf(3);
+console.log(indexOff);
+const at = array.at(3);
+console.log(at);
+const slice = array.slice(1,3);
+console.log(slice);
+const splice = array.splice(1,2);
+console.log(splice);
+console.log(array);
+let arr2 =[3,4];
+const concat = array.concat(arr2);
+console.log(concat);
+ arr2.push(34);
+ arr2.push(67);
+console.log(arr2);
+ arr2.pop();
+console.log(arr2);
+arr2.shift();
+console.log(arr2);
+// string methods 
+let string = 'this is the string for practies   ';
+ const trim = string.trim();
+console.log(trim);
+console.log(string.indexOf('is'));
+console.log(string.at(2));
+console.log(string.replace('this','hi this'));
+ const substr = string.substr(2,4)
+console.log(substr);
+const slicee = string.slice(3,6);
+console.log(slicee);
+const splicee = string.substring(3,2);
+console.log(splicee);
+
+
+
+
+
 
 let string = 'qup';
 function reversestr(string){
