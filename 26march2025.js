@@ -72,3 +72,72 @@ console.log(unary);
   const output4 = false || 2 || 'shardul' ;//in logical OR operator  IF we found the truthy vaule then it will return that 
  console.log(output4); 
  
+
+
+
+
+let numbers = [1,2,3];
+numbers.push(4,6,5,8);
+console.log(numbers);
+numbers.unshift(0,10);
+console.log(numbers)
+ 
+const wer = [2,4,3,6];
+console.log(wer.indexOf(4));
+console.log(wer.includes(6));
+ const obj = [ {
+     name :'a',
+     property :'ty'
+ }]
+const res = obj.find(function (element){
+     return element.name==='a';
+ })
+ console.log(res);
+ 
+ const res1 = obj.findIndex(function (element){
+     return element.name==='uyt';
+ })
+ console.log(res1);
+ let demoarr = [1,2,3,4];
+ demoarr.pop();
+ console.log(demoarr);
+ demoarr.shift();
+ console.log(demoarr)
+ let demo = [1,2,3,4];
+ console.log(demo);
+ demo.splice(2,1)
+ console.log(demo)
+  demo.splice(2,2)
+ console.log(demo)
+ 
+ let first = [1,2,3];
+ let last =[4,5,6,7];
+ const combined = first.concat(last);
+ console.log(combined);
+ const slice = combined.slice(3,6);
+
+//  console.log
+console.log(slice);
+
+  let firstnumber = [{id:1,name:"tripod"}];
+   let lastnumber =[4,5,6,7];
+let    combin = firstnumber.concat(lastnumber);
+  console.log(combin);
+  firstnumber[0].name = 'shardul';
+  console.log(combin);
+  
+  for(let num of lastnumber){
+      console.log(num)
+  }
+  let listofprices = [23,54,76,89,23,12,21,89,67,43]
+  const foreach = listofprices.forEach(function(num){
+      console.log(`the price of element  is :${num}`);
+  })
+  
+  const  joined = listofprices.join(',');
+  console.log(joined);
+  
+  const string = 'this is my first string for practie'
+  const parts = string.split(" ");
+  console.log(parts);
+ 
