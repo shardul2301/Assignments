@@ -83,3 +83,64 @@ const obj = {
 }
 console.log(Array.isArray(obj));
 console.log(Array.isArray(array3));
+
+
+
+
+
+
+
+// string methods  22 types 
+
+let string = "the gateway of india is in mumbai";
+console.log(string)
+const length = string.length;
+console.log(length);
+const includes = string.includes('is');//if not there then it will return the false value 
+console.log(includes);
+const startwith = string.startsWith('ty');
+console.log(startwith);
+const endswith = string.endsWith('mumbai');
+console.log(endswith);
+const indexof = string.indexOf('of');
+console.log(indexof);
+const substr = string.substr(2,5);//eg it will includes last number of substr also in this 5 up too
+console.log(substr);
+const att = string.at(4);
+console.log(att);
+const substring = string.substring(1,4);//not take the negative index 
+console.log(substring);
+const slice = string.slice(0,-1);
+console.log(slice);
+// const splice = string.splice(5,2);
+// console.log(splice);
+let trimstr = '  Here we Are using the trim method so we are happy '
+const starttrim = trimstr.trimStart();
+console.log(starttrim);
+const endtrim = trimstr.trimEnd();
+console.log(endtrim);
+const trim = trimstr.trim();
+console.log(trim);
+const uppercase = trimstr.toUpperCase();
+console.log(uppercase);
+const lowercase = trimstr.toLowerCase();
+console.log(lowercase);
+const joinedstr = lowercase.concat(uppercase)
+console.log(joinedstr)
+const str = 'typo';
+const reversee = str.split("").reverse().join("");
+console.log(reversee);
+const replace = string.replace('of','of the whole');
+console.log(replace);
+const replaceall = trimstr.replaceAll('we','i am ');
+console.log(replaceall);
+
+const repeat = str.repeat(3);
+console.log(repeat)
+
+console.log(str[0]);
+console.log('hiima'[1]);
+ const charat = str.charAt(2);
+ console.log(charat);
+const charcodeat = str.charCodeAt(2);
+ console.log(charcodeat);
