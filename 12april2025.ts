@@ -65,4 +65,14 @@ export default class home {}
 
 
 import home from './homefiles';
+// Wildcard imports
+import * as shapes from './shapes'
 
+let square = new shapes.Square();
+
+// Re-exporting
+// /shapes/index.ts
+export { triangle } from './triangle';
+export { Square } from './square';
+// app.ts
+import { triangle, Square } from './shapes';
